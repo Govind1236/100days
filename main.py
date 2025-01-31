@@ -40,10 +40,25 @@
 # print(f"{name} Your Body Measure Index Is: ", body_measure_index)
 # print(round(34 / 3 ))
 # Your Life In Weeks
-age = input("What is your current age? ")
-age_as_int = int(age)
-years_remaining = 90 - age_as_int
-days_remaining  = years_remaining * 365
-weeks_remaining = years_remaining * 52  
-month_remaining = round(days_remaining / 30)
-print(f"You have {years_remaining} years, you have {days_remaining} days, you have {weeks_remaining} weeks, you have {month_remaining} months remaining")
+# age = input("What is your current age? ")
+# age_as_int = int(age)
+# years_remaining = 90 - age_as_int
+# days_remaining  = years_remaining * 365
+# weeks_remaining = years_remaining * 52  
+# month_remaining = round(days_remaining / 30)
+# print(f"You have {years_remaining} years, you have {days_remaining} days, you have {weeks_remaining} weeks, you have {month_remaining} months remaining")
+# Tip Calculator
+bill = float(input("What was the total bill? \n "))
+# percentage = {0.12, .15, 0.1 }
+percentage = float(input("What percentage tip would you like to give 10, 12 , 15 ? \n "))
+if percentage == 10:
+    Pay = bill * 0.1
+elif percentage == 12:
+    Pay = bill * 0.12
+else:
+  Pay = bill * .15 
+
+total_bill = Pay + bill
+num_people = int(input("How many people to split the bill? "))
+pay_per_person = total_bill / num_people
+print(f"Each should pay $ {pay_per_person}")
