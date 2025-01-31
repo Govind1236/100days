@@ -60,5 +60,5 @@ else:
 
 total_bill = Pay + bill
 num_people = int(input("How many people to split the bill? "))
-pay_per_person = total_bill / num_people
+pay_per_person = round(total_bill / num_people, 2)
 print(f"Each should pay $ {pay_per_person}")
