@@ -48,6 +48,8 @@
 # month_remaining = round(days_remaining / 30)
 # print(f"You have {years_remaining} years, you have {days_remaining} days, you have {weeks_remaining} weeks, you have {month_remaining} months remaining")
 # Tip Calculator
+print("Welcome To The Tip Calculator")
+user  = input("Enter Your Team Lead Name: ")
 bill = float(input("What was the total bill? \n "))
 # percentage = {0.12, .15, 0.1 }
 percentage = float(input("What percentage tip would you like to give 10, 12 , 15 ? \n "))
@@ -61,4 +63,4 @@ else:
 total_bill = Pay + bill
 num_people = int(input("How many people to split the bill? "))
 pay_per_person = round(total_bill / num_people, 2)
-print(f"Each should pay $ {pay_per_person}")
+print(f"{user} You and your team Each should pay $ {pay_per_person}")
