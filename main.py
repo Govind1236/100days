@@ -54,13 +54,13 @@ bill = float(input("What was the total bill? \n "))
 # percentage = {0.12, .15, 0.1 }
 percentage = float(input("What percentage tip would you like to give 10, 12 , 15 ? \n "))
 if percentage == 10:
-    Pay = bill * 0.1
+    tip = bill * 0.1
 elif percentage == 12:
-    Pay = bill * 0.12
+    tip = bill * 0.12
 else:
-  Pay = bill * .15 
+  tip = bill * .15 
 
-total_bill = Pay + bill
+total_bill = tip + bill
 num_people = int(input("How many people to split the bill? "))
 pay_per_person = round(total_bill / num_people, 2)
 print(f"{user} You and your team Each should pay $ {pay_per_person}")
