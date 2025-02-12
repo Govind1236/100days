@@ -47,20 +47,27 @@
 # weeks_remaining = years_remaining * 52  
 # month_remaining = round(days_remaining / 30)
 # print(f"You have {years_remaining} years, you have {days_remaining} days, you have {weeks_remaining} weeks, you have {month_remaining} months remaining")
-# Tip Calculator
-print("Welcome To The Tip Calculator")
-user  = input("Enter Your Team Lead Name: ")
-bill = float(input("What was the total bill? \n "))
-# percentage = {0.12, .15, 0.1 }
-percentage = float(input("What percentage tip would you like to give 10, 12 , 15 ? \n "))
-if percentage == 10:
-    tip = bill * 0.1
-elif percentage == 12:
-    tip = bill * 0.12
-else:
-  tip = bill * .15 
+# Tip Calculator using conditions
+# print("Welcome To The Tip Calculator")
+# user  = input("Enter Your Team Lead Name: ")
+# bill = float(input("What was the total bill? \n "))
+# # percentage = {0.12, .15, 0.1 }
+# percentage = float(input("What percentage tip would you like to give 10, 12 , 15 ? \n "))
+# if percentage == 10:
+#     tip = bill * 0.1
+# elif percentage == 12:
+#     tip = bill * 0.12
+# else:
+#   tip = bill * .15 
 
-total_bill = tip + bill
-num_people = int(input("How many people to split the bill? "))
-pay_per_person = round(total_bill / num_people, 2)
-print(f"{user} You and your team Each should pay $ {pay_per_person}")
+# total_bill = tip + bill
+# num_people = int(input("How many people to split the bill? "))
+# pay_per_person = round(total_bill / num_people, 2)
+# print(f"{user} You and your team Each should pay $ {pay_per_person}")
+# Roller Coster
+name  = input("Enter Your Name: ")
+height = float(input("Enter Your Height: "))
+if height > 120:
+    print(f"{name} Your Height is {height} cm You can Ride a coster ")
+else:
+    print(f"{name} You Cannot ride due to your height is  {height}cm is below 120 cm")
